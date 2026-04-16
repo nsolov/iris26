@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Export generator="Cache" version="25">
+  <Document name="sandbox-cloud-sample.ZPM">
+    <Module>
+      <Name>sandbox-cloud-sample</Name>
+      <Version>0.0.1</Version>
+      <Description>IRIS Sandbox Template</Description>
+      <Packaging>module</Packaging>
+      <SourcesRoot>src</SourcesRoot>
+      <Resource Name="Sandbox.Cloudsample.PKG"/>
+    </Module>
+  </Document>
+</Export>
