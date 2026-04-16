@@ -5,6 +5,7 @@ Class App.Installer
 XData setup
 {
 <Manifest>
+  <Default Name="SourceDir" Value="/home/irisowner/dev/src"/>
   <Default Name="Namespace" Value="IRISAPP"/>
   <Default Name="database" Value="irisapp"/>
   
@@ -14,7 +15,10 @@ XData setup
       <Database Name="${Namespace}-CODE" Dir="${mgrdir}${database}/code" Create="yes" Resource="%DB_${Namespace}-CODE"/>
     </Configuration>
     <CSPApplication Url="/testweb" Directory="/home/irisowner/web/" ServeFiles="1" Recurse="1" AuthenticationMethods="64" />
+    <Import File="${SourceDir}/sandbox/ObjSample" Flags="ck/multicompile=0" Recurse="1"/>
+    <Import File="${SourceDir}/sandbox/PySample" Flags="ck/multicompile=0" Recurse="1"/>
   </Namespace>
+
 </Manifest>
 }
 

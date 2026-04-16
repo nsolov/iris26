@@ -6,5 +6,4 @@
 
     zn "IRISAPP"
 
-    do $System.OBJ.Import("/home/irisowner/dev/src/sandbox","ck",,1)
     halt

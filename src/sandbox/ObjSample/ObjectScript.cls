@@ -1,4 +1,4 @@
-Class Sandbox.Cloudsample.ObjectScript
+Class Sandbox.ObjSample.ObjectScript
 {
 
 ClassMethod HelloWorld(name As %String = "") As %Status

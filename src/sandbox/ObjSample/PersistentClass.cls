@@ -1,4 +1,4 @@
-Class Sandbox.Cloudsample.PersistentClass Extends %Persistent
+Class Sandbox.ObjSample.PersistentClass Extends %Persistent
 {
 
 Property Value As %String(MAXLEN = 10000);

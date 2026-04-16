@@ -1,7 +1,8 @@
 # The most minimumalistic dockerfile possible.
 #  No embedded python support, no unit-testing, no aliases.
 ARG IMAGE=intersystemsdc/irishealth-community
-ARG IMAGE=intersystemsdc/iris-community
+ARG IMAGE=intersystemsdc/iris-community:2025.3
+ARG IMAGE=intersystemsdc/iris-community:latest
 FROM $IMAGE
 
 WORKDIR /home/irisowner/dev
