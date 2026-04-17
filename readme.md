@@ -18,7 +18,7 @@ When using `IMAGE=intersystemsdc/iris-community:2025.3`, the build completes suc
 
 ## Additional Observation
 
-When using `IMAGE=intersystemsdc/iris-community:latest`, the build also succeeds if `App.Installer` does not import classes that contain methods with `[ Language = python ]`.
+1. When using `IMAGE=intersystemsdc/iris-community:latest`, the build also succeeds if `App.Installer` does not import classes that contain methods with `[ Language = python ]`.
 
 In this example, removing the following line allows the build to complete successfully:
 
@@ -26,5 +26,7 @@ In this example, removing the following line allows the build to complete succes
 <Import File="${SourceDir}/sandbox/PySample" Flags="ck/multicompile=0" Recurse="1"/>
 ```
 
-If the `/multicompile=0` flag is removed, the import may also complete successfully on `2026.1`.
+2. If the `/multicompile=0` flag is removed, the import may also complete successfully on `2026.1`.
 However, any later attempt to call methods declared with `[ Language = python ]` will fail at runtime with an error.
+
+3. When using `IMAGE=containers.intersystems.com/intersystems/iris:2026.1`, the build completes without errors, and methods declared with `[ Language = python ]` execute without errors.
