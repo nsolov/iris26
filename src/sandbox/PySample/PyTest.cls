@@ -4,7 +4,12 @@ Class Sandbox.PySample.PyTest
 /// Simple ObjectScript wrapper to call the embedded Python demo.
 ClassMethod RunDemo() As %String
 {
-    quit ..PythonDemo()
+    
+    set x = ..PythonDemo()
+    
+    write !,x,!
+    
+    q x
 }
 
 /// Demo method implemented in embedded Python.

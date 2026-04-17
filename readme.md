@@ -25,3 +25,6 @@ In this example, removing the following line allows the build to complete succes
 ```xml
 <Import File="${SourceDir}/sandbox/PySample" Flags="ck/multicompile=0" Recurse="1"/>
 ```
+
+If the `/multicompile=0` flag is removed, the import may also complete successfully on `2026.1`.
+However, any later attempt to call methods declared with `[ Language = python ]` will fail at runtime with an error.
